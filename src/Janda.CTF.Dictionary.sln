@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Janda.CTF.Dictionary", "Jan
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Janda.CTF.Dictionary.Tests", "Janda.CTF.Dictionary.Tests\Janda.CTF.Dictionary.Tests.csproj", "{8EE3DDFE-4E70-442A-9FF1-E9E5ED4AEC39}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Janda.CTF.Dictionary.Demo", "Janda.CTF.Dictionary.Demo\Janda.CTF.Dictionary.Demo.csproj", "{6BC39AC4-58E6-456E-9F25-95DA1913575B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +43,18 @@ Global
 		{8EE3DDFE-4E70-442A-9FF1-E9E5ED4AEC39}.Release|x64.Build.0 = Release|Any CPU
 		{8EE3DDFE-4E70-442A-9FF1-E9E5ED4AEC39}.Release|x86.ActiveCfg = Release|Any CPU
 		{8EE3DDFE-4E70-442A-9FF1-E9E5ED4AEC39}.Release|x86.Build.0 = Release|Any CPU
+		{6BC39AC4-58E6-456E-9F25-95DA1913575B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BC39AC4-58E6-456E-9F25-95DA1913575B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BC39AC4-58E6-456E-9F25-95DA1913575B}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{6BC39AC4-58E6-456E-9F25-95DA1913575B}.Debug|x64.Build.0 = Debug|Any CPU
+		{6BC39AC4-58E6-456E-9F25-95DA1913575B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{6BC39AC4-58E6-456E-9F25-95DA1913575B}.Debug|x86.Build.0 = Debug|Any CPU
+		{6BC39AC4-58E6-456E-9F25-95DA1913575B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BC39AC4-58E6-456E-9F25-95DA1913575B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BC39AC4-58E6-456E-9F25-95DA1913575B}.Release|x64.ActiveCfg = Release|Any CPU
+		{6BC39AC4-58E6-456E-9F25-95DA1913575B}.Release|x64.Build.0 = Release|Any CPU
+		{6BC39AC4-58E6-456E-9F25-95DA1913575B}.Release|x86.ActiveCfg = Release|Any CPU
+		{6BC39AC4-58E6-456E-9F25-95DA1913575B}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
