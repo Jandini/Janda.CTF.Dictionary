@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -10,8 +10,17 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Janda.CTF.Dictionary" Version="0.1.0-alpha.1" />
-    <PackageReference Include="Janda.Workbench" Version="0.1.0-alpha.23" />
+    <PackageReference Include="Janda.Workbench" Version="0.1.0-alpha.24" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Janda.CTF.Dictionary\Janda.CTF.Dictionary.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>
