@@ -52,7 +52,7 @@ namespace Janda.CTF.Dictionary.Demo
             string word;
 
             while ((word = reader.ReadLine()) != null)
-                if (!word.StartsWith("#"))
+                if (!string.IsNullOrEmpty(word) && !word.StartsWith("#"))
                     yield return (word + '\n');
         }
     }

@@ -28,7 +28,7 @@ namespace Janda.CTF.Dictionary.Tests
         [Fact]
         public void GetWords_Enumerate_Words()
         {
-            const int EXPECTED_WORD_COUNT = 1723655;
+            const int EXPECTED_WORD_COUNT = 1723651;
             var dictionary = new DictionaryService(_logger);
             var words = dictionary.GetWords();
             var counter = 0;
