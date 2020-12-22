@@ -5,6 +5,7 @@
     <RootNamespace>Janda.CTF.Dictionary</RootNamespace>
     <Description>Provides word dictionary services.</Description>
     <Authors>Matt Janda</Authors>
+    <PackageIcon>CTF.ico</PackageIcon>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -17,6 +18,10 @@
 
   <ItemGroup>
     <None Remove="embedded.gz" />
+    <None Include="CTF.ico">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
   <ItemGroup>
