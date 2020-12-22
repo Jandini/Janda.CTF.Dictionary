@@ -1,36 +1,36 @@
-﻿using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Logging;
 using System.Diagnostics;
+using System.Linq;
 
 namespace Janda.CTF.Dictionary.Demo
 {
-    internal class DictionaryDemo : IDictionaryDemo
+    public class D001 : IChallenge
     {
+        private readonly ILogger<D001> _logger;
         readonly IDictionaryService _dictionary;
-        readonly ILogger<DictionaryDemo> _logger;
 
-        public DictionaryDemo(IDictionaryService dictionary, ILogger<DictionaryDemo> logger)
+        public D001(ILogger<D001> logger, IDictionaryService dictionary)
         {
-            _dictionary = dictionary;
             _logger = logger;
+            _dictionary = dictionary;
         }
 
         public void Run()
         {
             var words = _dictionary.GetWords();
-
             var stopwatch = new Stopwatch();
+            var counter = 0;
             stopwatch.Start();
 
             foreach (var word in words)
-            {            
+            {
                 if (!word.StartsWith('#'))
                 {
-
+                    counter++;
                 }
-            }            
+            }
 
-
-            _logger.LogTrace("Word enumeration completed in {stopwatch}", stopwatch.Elapsed);
+            _logger.LogTrace("{count} words enumeration completed in {stopwatch}", counter, stopwatch.Elapsed);
         }
     }
 }

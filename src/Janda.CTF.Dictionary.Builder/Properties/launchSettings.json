@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "B001": {
+      "commandName": "Project",
+      "commandLineArgs": "--name B001"
+    }
+  }
+}

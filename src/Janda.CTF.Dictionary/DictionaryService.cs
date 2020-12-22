@@ -23,17 +23,14 @@ namespace Janda.CTF
             var assembly = Assembly.GetExecutingAssembly();
             var directory = new EmbeddedFileProvider(assembly, typeof(DictionaryService).Namespace)
                 .GetDirectoryContents(string.Empty);
-
-            _logger.LogTrace("Using embedded dictionary in {AssemblyName}", assembly.GetName().Name);
             
             foreach (var file in directory)
             {
-                _logger.LogTrace("Reading {dictionary}", file.Name);
+                _logger.LogTrace("Reading embedded {dictionary}", file.Name);
                 using var gzip = new GZipStream(file.CreateReadStream(), CompressionMode.Decompress);
 
                 var bytes = 0;
                 var sb = new StringBuilder();
-
                 var buffer = new byte[65536];
 
                 do

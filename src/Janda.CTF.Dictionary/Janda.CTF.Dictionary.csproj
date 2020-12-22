@@ -1,8 +1,9 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <RootNamespace>Janda.CTF.Dictionary</RootNamespace>
+    <Description>Provides word dictionary services.</Description>
     <Authors>Matt Janda</Authors>
   </PropertyGroup>
 
@@ -15,12 +16,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="directory-list-2.3-big.gz" />
+    <None Remove="embedded.gz" />
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="directory-list-2.3-big.gz" />
-  </ItemGroup>
+    <EmbeddedResource Include="embedded.gz" />
+  </ItemGroup>  
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.FileProviders.Embedded" Version="3.1.4" />

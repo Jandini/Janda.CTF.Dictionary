@@ -25,6 +25,6 @@ namespace Janda.CTF
         public static IServiceCollection AddDictionaryDirectory(this IServiceCollection services)
         {
             return services.AddTransient<IDictionaryDirectoryService, DictionaryDirectoryService>();
-        }
+        }        
     }
 }

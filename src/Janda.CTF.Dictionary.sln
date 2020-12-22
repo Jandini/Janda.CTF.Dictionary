@@ -5,9 +5,11 @@ VisualStudioVersion = 16.0.29411.108
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Janda.CTF.Dictionary", "Janda.CTF.Dictionary\Janda.CTF.Dictionary.csproj", "{08D55ED9-4128-4304-9490-9926EB1149C3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Janda.CTF.Dictionary.Tests", "Janda.CTF.Dictionary.Tests\Janda.CTF.Dictionary.Tests.csproj", "{8EE3DDFE-4E70-442A-9FF1-E9E5ED4AEC39}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Janda.CTF.Dictionary.Tests", "Janda.CTF.Dictionary.Tests\Janda.CTF.Dictionary.Tests.csproj", "{8EE3DDFE-4E70-442A-9FF1-E9E5ED4AEC39}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Janda.CTF.Dictionary.Demo", "Janda.CTF.Dictionary.Demo\Janda.CTF.Dictionary.Demo.csproj", "{6BC39AC4-58E6-456E-9F25-95DA1913575B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Janda.CTF.Dictionary.Demo", "Janda.CTF.Dictionary.Demo\Janda.CTF.Dictionary.Demo.csproj", "{6BC39AC4-58E6-456E-9F25-95DA1913575B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Janda.CTF.Dictionary.Builder", "Janda.CTF.Dictionary.Builder\Janda.CTF.Dictionary.Builder.csproj", "{1065BB32-8B1E-44B0-A032-C26A3B4AB14A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,6 +57,18 @@ Global
 		{6BC39AC4-58E6-456E-9F25-95DA1913575B}.Release|x64.Build.0 = Release|Any CPU
 		{6BC39AC4-58E6-456E-9F25-95DA1913575B}.Release|x86.ActiveCfg = Release|Any CPU
 		{6BC39AC4-58E6-456E-9F25-95DA1913575B}.Release|x86.Build.0 = Release|Any CPU
+		{1065BB32-8B1E-44B0-A032-C26A3B4AB14A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1065BB32-8B1E-44B0-A032-C26A3B4AB14A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1065BB32-8B1E-44B0-A032-C26A3B4AB14A}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{1065BB32-8B1E-44B0-A032-C26A3B4AB14A}.Debug|x64.Build.0 = Debug|Any CPU
+		{1065BB32-8B1E-44B0-A032-C26A3B4AB14A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{1065BB32-8B1E-44B0-A032-C26A3B4AB14A}.Debug|x86.Build.0 = Debug|Any CPU
+		{1065BB32-8B1E-44B0-A032-C26A3B4AB14A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1065BB32-8B1E-44B0-A032-C26A3B4AB14A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1065BB32-8B1E-44B0-A032-C26A3B4AB14A}.Release|x64.ActiveCfg = Release|Any CPU
+		{1065BB32-8B1E-44B0-A032-C26A3B4AB14A}.Release|x64.Build.0 = Release|Any CPU
+		{1065BB32-8B1E-44B0-A032-C26A3B4AB14A}.Release|x86.ActiveCfg = Release|Any CPU
+		{1065BB32-8B1E-44B0-A032-C26A3B4AB14A}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

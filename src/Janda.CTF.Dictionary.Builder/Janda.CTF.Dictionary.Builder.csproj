@@ -14,13 +14,23 @@
     <OutputPath>..\..\bin</OutputPath>
   </PropertyGroup>
 
-
   <ItemGroup>
     <PackageReference Include="Janda.CTF" Version="0.1.0-alpha.16" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Janda.CTF.Dictionary\Janda.CTF.Dictionary.csproj" />
+    <None Update="Challenges\B001\directory-list-1.0.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Challenges\B001\directory-list-2.3-big.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Challenges\B001\directory-list-2.3-medium.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Challenges\B001\directory-list-2.3-small.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>

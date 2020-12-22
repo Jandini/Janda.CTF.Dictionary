@@ -28,16 +28,15 @@ namespace Janda.CTF.Dictionary.Tests
         [Fact]
         public void GetWords_Enumerate_Words()
         {
-            const int EXPECTED_WORD_COUNT = 1273820;
+            const int EXPECTED_WORD_COUNT = 1723655;
             var dictionary = new DictionaryService(_logger);
             var words = dictionary.GetWords();
-            var wordCount = 0;
+            var counter = 0;
 
             foreach (var word in words)
-                if (!word.StartsWith('#'))
-                    wordCount++;
+                counter++;
 
-            Assert.Equal(EXPECTED_WORD_COUNT, wordCount);
+            Assert.Equal(EXPECTED_WORD_COUNT, counter);
         }
     }
 }
