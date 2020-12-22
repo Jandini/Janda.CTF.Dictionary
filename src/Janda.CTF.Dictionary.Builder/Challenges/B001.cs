@@ -19,6 +19,8 @@ namespace Janda.CTF.Dictionary.Demo
 
         public void Run()
         {
+            var words = new HashSet<string>();
+
             const string COMPRESSED_DICTIONARY_TARGET_DIR = @"..\..\src\Janda.CTF.Dictionary";
             const string COMPRESSED_DICTIONARY_FILE_NAME = "embedded.gz";
 
@@ -36,10 +38,13 @@ namespace Janda.CTF.Dictionary.Demo
                 using var input = File.OpenRead(file);               
                 using var reader = new StreamReader(input);
 
-                foreach (var word in ReadWords(reader).Distinct())
+                foreach (var word in ReadWords(reader))
                 {
-                    gzip.Write(Encoding.UTF8.GetBytes(word));
-                    counter++;
+                    if (words.Add(word))
+                    {
+                        gzip.Write(Encoding.UTF8.GetBytes(word));
+                        counter++;
+                    }
                 }
             }
 
