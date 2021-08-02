@@ -6,16 +6,19 @@
     <IsPackable>false</IsPackable>
   </PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <OutputPath>..\..\bin</OutputPath>
+  <PropertyGroup>
+    <OutputPath>..\..\bin\$(Configuration)</OutputPath>
   </PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <OutputPath>..\..\bin</OutputPath>
-  </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Janda.CTF" Version="0.1.0-alpha.16" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Include="Challenges\B001\rockyou-1.txt" />
+    <Page Include="Challenges\B001\rockyou-2.txt" />
+    <Page Include="Challenges\B001\rockyou-3.txt" />
   </ItemGroup>
 
   <ItemGroup>
@@ -29,6 +32,15 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="Challenges\B001\directory-list-2.3-small.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Challenges\B001\rockyou-1.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Challenges\B001\rockyou-2.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Challenges\B001\rockyou-3.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>

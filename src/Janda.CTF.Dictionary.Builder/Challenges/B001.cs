@@ -21,7 +21,7 @@ namespace Janda.CTF.Dictionary.Demo
         {
             var words = new HashSet<string>();
 
-            const string COMPRESSED_DICTIONARY_TARGET_DIR = @"..\..\src\Janda.CTF.Dictionary";
+            const string COMPRESSED_DICTIONARY_TARGET_DIR = @"..\..\..\src\Janda.CTF.Dictionary";
             const string COMPRESSED_DICTIONARY_FILE_NAME = "embedded.gz";
 
             var path = Path.Combine(COMPRESSED_DICTIONARY_TARGET_DIR, COMPRESSED_DICTIONARY_FILE_NAME);

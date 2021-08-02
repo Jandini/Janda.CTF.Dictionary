@@ -5,20 +5,17 @@
     <RootNamespace>Janda.CTF.Dictionary</RootNamespace>
     <Description>Provides word dictionary services.</Description>
     <Authors>Matt Janda</Authors>
-    <PackageIcon>CTF.ico</PackageIcon>
+    <PackageIcon>CTF.png</PackageIcon>
+    <RepositoryUrl>https://github.com/Jandini/Janda.CTF.Dictionary</RepositoryUrl>    
   </PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <OutputPath>..\..\bin</OutputPath>
-  </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <OutputPath>..\..\bin</OutputPath>
+  <PropertyGroup>
+    <OutputPath>..\..\bin\$(Configuration)</OutputPath>
   </PropertyGroup>
 
   <ItemGroup>
     <None Remove="embedded.gz" />
-    <None Include="CTF.ico">
+    <None Include="CTF.png">
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>
