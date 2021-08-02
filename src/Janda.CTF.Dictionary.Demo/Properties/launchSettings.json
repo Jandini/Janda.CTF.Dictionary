@@ -1,0 +1,20 @@
+{
+  "profiles": {
+    "Add": {
+      "commandName": "Project",
+      "commandLineArgs": "add --name D001"
+    },
+    "Play": {
+      "commandName": "Project",
+      "commandLineArgs": "play"
+    },
+    "Help": {
+      "commandName": "Project",
+      "commandLineArgs": "--help"
+    },
+    "D001": {
+      "commandName": "Project",
+      "commandLineArgs": "--name D001"
+    }
+  }
+}
