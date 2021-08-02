@@ -12,7 +12,7 @@
 
 
   <ItemGroup>
-    <PackageReference Include="Janda.CTF" Version="0.1.0-alpha.16" />
+    <PackageReference Include="Janda.CTF" Version="0.1.0" />
   </ItemGroup>
 
   <ItemGroup>
